@@ -1,4 +1,8 @@
-﻿#
+﻿# Author: Adenideni
+# Version: 1.0.0
+# Date: 2026-05-23
+
+#
 # MorningChecks.Logging.psm1
 # Provides structured logging to both the console and a timestamped log file.
 #

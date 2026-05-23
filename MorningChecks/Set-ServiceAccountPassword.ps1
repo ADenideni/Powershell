@@ -1,4 +1,10 @@
 ﻿<#
+Author: Adenideni
+Version: 1.0.0
+Date: 2026-05-23
+#>
+
+<#
 .SYNOPSIS
     One-time setup: saves the service-account password so the morning checks
     script can run on a schedule without prompting.

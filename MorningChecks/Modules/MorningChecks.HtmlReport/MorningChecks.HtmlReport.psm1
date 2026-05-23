@@ -5,7 +5,11 @@
 # All functions accept the raw data collected by the other modules and return
 # an HTML string fragment that is assembled in Start-MorningChecks.ps1.
 #
+# Author: Adenideni
+# Version: 1.0.0
+# Date: 2026-05-23
 
+#
 Set-StrictMode -Off
 
 # ──────────────────────────────────────────────────────────────────────────────

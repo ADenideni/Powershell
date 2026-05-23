@@ -4,7 +4,11 @@
 #
 # Depends on:  MorningChecks.Logging, VMware.PowerCLI (auto-installed if missing)
 #
+# Author: Adenideni
+# Version: 1.0.0
+# Date: 2026-05-23
 
+#
 Set-StrictMode -Off
 
 function Assert-PowerCLI {

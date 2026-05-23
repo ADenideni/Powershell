@@ -1,4 +1,8 @@
-﻿#
+﻿# Author: Adenideni
+# Version: 1.0.0
+# Date: 2026-05-23
+
+#
 # MorningChecks.DiskSpace.psm1
 # Collects disk usage from all Windows servers in Active Directory.
 #

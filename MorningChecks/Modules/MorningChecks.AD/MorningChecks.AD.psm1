@@ -1,4 +1,8 @@
-﻿#
+﻿# Author: Adenideni
+# Version: 1.0.0
+# Date: 2026-05-23
+
+#
 # MorningChecks.AD.psm1
 # Active Directory health and user status checks.
 #
