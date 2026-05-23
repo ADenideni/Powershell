@@ -1,5 +1,6 @@
 ﻿<#
-Author: Adenideni
+Author: ADenideni
+Email: a.denideni@hotmail.com
 Version: 1.0.0
 Date: 2026-05-23
 #>
@@ -71,7 +72,7 @@ Write-Host "  Target account: $userName" -ForegroundColor Yellow
 Write-Host "  Settings file : $settingsPath" -ForegroundColor Yellow
 Write-Host ""
 Write-Host "  The password will be encrypted with AES-256 (key derived from the"
-  Write-Host "  service account name) and will work on any machine."
+Write-Host "  service account name) and will work on any machine."
 Write-Host ""
 
 
@@ -91,8 +92,8 @@ if ($null -eq $cred) {
 
 # Derive a 32-byte AES-256 key from the service account name (SHA-256).
 # This is consistent on any machine so the encrypted blob is fully portable.
-$aesKey   = [System.Security.Cryptography.SHA256]::Create().ComputeHash(
-                [System.Text.Encoding]::UTF8.GetBytes($settings.ServiceAccountName))
+$aesKey = [System.Security.Cryptography.SHA256]::Create().ComputeHash(
+    [System.Text.Encoding]::UTF8.GetBytes($settings.ServiceAccountName))
 $encrypted = $cred.Password | ConvertFrom-SecureString -Key $aesKey
 
 $content = [System.IO.File]::ReadAllText($settingsPath, [System.Text.Encoding]::UTF8)

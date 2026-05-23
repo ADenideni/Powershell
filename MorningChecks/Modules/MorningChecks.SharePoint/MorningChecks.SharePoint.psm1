@@ -6,7 +6,8 @@
 #              Microsoft.Online.SharePoint.PowerShell  (auto-installed if missing)
 #              PnP.PowerShell  (for folder creation)
 #
-# Author: Adenideni
+# Author: ADenideni
+# Email: a.denideni@hotmail.com
 # Version: 1.0.0
 # Date: 2026-05-23
 

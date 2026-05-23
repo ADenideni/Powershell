@@ -1,4 +1,5 @@
-@REM Author: Adenideni
+@REM Author: ADenideni
+@REM Email: a.denideni@hotmail.com
 @REM Version: 1.0.0
 @REM Date: 2026-05-23
 
