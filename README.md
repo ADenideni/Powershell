@@ -19,4 +19,5 @@ The writing style and implementation approach will vary across scripts to showca
 ## Contact
 
 Name: Abdel Denideni
-Email: a.denideni@hotmail.comm>
+
+Email: [a.denideni@hotmail.com](mailto:a.denideni@hotmail.com)
