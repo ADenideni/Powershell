@@ -15,3 +15,8 @@ The goal of this repository is to share examples of how I structure PowerShell s
 The content in this repository should be used at your own risk and reviewed before use in your own environment.
 
 The writing style and implementation approach will vary across scripts to showcase different ways to write and structure PowerShell code.
+
+## Contact
+
+Name: Abdel Denideni
+Email: a.denideni@hotmail.comm>
