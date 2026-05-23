@@ -12,3 +12,6 @@ This repository is a showcase of some of the PowerShell work I do, including aut
 
 The goal of this repository is to share examples of how I structure PowerShell scripts for real-world administration tasks while keeping published code safe, readable, reusable, and suitable for others to learn from or adapt.
 
+The content in this repository should be used at your own risk and reviewed before use in your own environment.
+
+The writing style and implementation approach will vary across scripts to showcase different ways to write and structure PowerShell code.
