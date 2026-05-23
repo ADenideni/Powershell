@@ -362,7 +362,7 @@ Function Get-NetworkHealthChecks {
         $DNSResults = $null
         $DNSResults = @()
         foreach ($DomainController in $DomainControllers) {
-            $ADPartitionList = repadmin /showrepl $DomainController | select-string "dc=" | Where-Object { $_ -like "*DC=DomainDnsZones*" }
+            $ADPartitionList = repadmin /showrepl $DomainController | Select-String "dc=" | Where-Object { $_ -like "*DC=DomainDnsZones*" }
 
             foreach ($ADPartition in $ADPartitionList) {
                 $result = repadmin /showrepl $DomainController $ADPartition
@@ -450,9 +450,15 @@ Function Get-NetworkHealthChecks {
 
 
         #Create Dummy File (50MB)
-        fsutil file createnew c:\temp\SampleFile.txt 52428800
+        $tempDirectory = Join-Path -Path $env:TEMP -ChildPath 'NetworkHealthCheck'
+        if (-not (Test-Path -LiteralPath $tempDirectory)) {
+            New-Item -Path $tempDirectory -ItemType Directory -Force | Out-Null
+        }
 
-        $item = get-item 'c:\temp\SampleFile.txt'
+        $sampleFilePath = Join-Path -Path $tempDirectory -ChildPath 'SampleFile.txt'
+        fsutil file createnew $sampleFilePath 52428800 | Out-Null
+
+        $item = Get-Item -LiteralPath $sampleFilePath
 
         foreach ($Share in $Shares) {
 
