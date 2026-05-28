@@ -1,4 +1,4 @@
-﻿<#
+<#
 Author: ADenideni
 Email: a.denideni@hotmail.com
 Version: 1.0.0
@@ -48,7 +48,7 @@ Date: 2026-05-23
 
 
 .NOTES
-    Author:  Redacted
+    Author:  Abdel Denideni
     Contact: example@example.com
     Version: 2.0
     Date:    2024-01-01

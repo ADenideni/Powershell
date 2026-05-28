@@ -42,8 +42,8 @@ Function Invoke-TemplateTask {
 
     .NOTES
         FileName:   Invoke-TemplateTask.ps1
-        Author:     Your Name
-        Email:      your.email@example.com
+        Author:     Abdel Denideni
+        Email:      a.denideni@hotmail.com
         Created:    2022/10/25
         Updated:    2022/10/25
 
